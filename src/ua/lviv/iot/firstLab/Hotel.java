@@ -18,13 +18,9 @@ public class Hotel {
 
 	public Hotel(int numberOfVisitorsPerYear, String name, int numberOfRooms, double cheapestPriceInHrn,
 			boolean isFullyBooked, String streetLocation, String cityLocation) {
-		this.numberOfVisitorsPerYear = numberOfVisitorsPerYear;
-		this.name = name;
-		this.numberOfRooms = numberOfRooms;
-		this.cheapestPriceInHrn = cheapestPriceInHrn;
-		this.isFullyBooked = isFullyBooked;
-		this.streetLocation = streetLocation;
-		this.cityLocation = cityLocation;
+		this.resetValues(numberOfVisitorsPerYear, name, numberOfRooms, cheapestPriceInHrn, isFullyBooked,
+				streetLocation, cityLocation);
+
 	}
 
 	public Hotel() {
@@ -35,15 +31,15 @@ public class Hotel {
 		this(numberOfVisitorsPerYear, name, numberOfRooms, cheapestPriceInHrn, false, DEFAULT_STREET, DEFAULT_CITY);
 	}
 
-	public static void PrintStaticMinNumberOfRewiewsOnTripAdvisor() {
+	public static void printStaticMinNumberOfRewiewsOnTripAdvisor() {
 		System.out.println(Hotel.minNumberOfRewiewsOnTripAdvisor);
 	}
 
-	public void PrintMinNumberOfRewiewsOnTripAdvisor() {
+	public void printMinNumberOfRewiewsOnTripAdvisor() {
 		System.out.println(Hotel.minNumberOfRewiewsOnTripAdvisor);
 	}
 
-	public void ResetValues(int numberOfVisitorsPerYear, String name, int numberOfRooms, double cheapestPriceInHrn,
+	public void resetValues(int numberOfVisitorsPerYear, String name, int numberOfRooms, double cheapestPriceInHrn,
 			boolean isFullyBooked, String streetLocation, String cityLocation) {
 		this.numberOfVisitorsPerYear = numberOfVisitorsPerYear;
 		this.name = name;

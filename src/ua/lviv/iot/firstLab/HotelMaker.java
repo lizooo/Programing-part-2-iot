@@ -1,6 +1,5 @@
 package ua.lviv.iot.firstLab;
 
-@Deprecated
 public class HotelMaker {
 
 	public static void main(String[] args) {
@@ -15,22 +14,22 @@ public class HotelMaker {
 
 		System.out.println("------------------------------------------------");
 		System.out.println("Hotel Hilton after ResetValues():");
-		hilton.ResetValues(2503, "HiltonPl", 340, 146000.0, false, "none", "Katowice");
+		hilton.resetValues(2503, "HiltonPl", 340, 146000.0, false, "none", "Katowice");
 		System.out.println(hilton);
 
 		System.out.println("------------------------------------------------");
 		System.out.println("Default value of static field:");
 
-		grand.PrintMinNumberOfRewiewsOnTripAdvisor();
-		Hotel.PrintStaticMinNumberOfRewiewsOnTripAdvisor();
+		grand.printMinNumberOfRewiewsOnTripAdvisor();
+		Hotel.printStaticMinNumberOfRewiewsOnTripAdvisor();
 
 		Hotel.setMinNumberOfRewiewsOnTripAdvisor(15);
 
 		System.out.println("------------------------------------------------");
 		System.out.println("Value of static field after setting:");
 
-		grand.PrintMinNumberOfRewiewsOnTripAdvisor();
-		Hotel.PrintStaticMinNumberOfRewiewsOnTripAdvisor();
+		grand.printMinNumberOfRewiewsOnTripAdvisor();
+		Hotel.printStaticMinNumberOfRewiewsOnTripAdvisor();
 
 		int numberOfObjectsAccordingToTask = 4;
 		int counterOfCreatedObjects = 0;
