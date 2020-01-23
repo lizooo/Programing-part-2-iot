@@ -12,6 +12,12 @@ public class HotelMaker {
 		System.out.println(leopolis);
 		System.out.println(grand);
 		System.out.println(hilton);
+
+		System.out.println("------------------------------------------------");
+		System.out.println("Hotel Hilton after ResetValues():");
+		hilton.ResetValues(2503, "HiltonPl", 340, 146000.0, false, "none", "Katowice");
+		System.out.println(hilton);
+
 		System.out.println("------------------------------------------------");
 		System.out.println("Default value of static field:");
 
@@ -25,23 +31,21 @@ public class HotelMaker {
 
 		grand.PrintMinNumberOfRewiewsOnTripAdvisor();
 		Hotel.PrintStaticMinNumberOfRewiewsOnTripAdvisor();
-		
+
 		int numberOfObjectsAccordingToTask = 4;
 		int counterOfCreatedObjects = 0;
-		
+
 		Hotel[] arrayOfHotels = new Hotel[numberOfObjectsAccordingToTask];
-		
-		while (counterOfCreatedObjects < numberOfObjectsAccordingToTask){
-		 arrayOfHotels[counterOfCreatedObjects] = new Hotel();
-		 counterOfCreatedObjects++;
+
+		while (counterOfCreatedObjects < numberOfObjectsAccordingToTask) {
+			arrayOfHotels[counterOfCreatedObjects] = new Hotel();
+			counterOfCreatedObjects++;
 		}
-		
+
 		for (Hotel currentHotel : arrayOfHotels) {
 			System.out.println(currentHotel);
 		}
-		
 
-		
 	}
 
 }
